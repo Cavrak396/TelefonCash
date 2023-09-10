@@ -10,3 +10,13 @@ a {
 .span {
   display: block;
 }
+
+h2 {
+  font-size: 38px;
+  font-weight: $semi;
+  color: $gray;
+
+  @include phone {
+    font-size: 31px;
+  }
+}

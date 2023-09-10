@@ -1,16 +1,19 @@
 //Colors
 $white: rgba(255, 255, 255, 1);
 $black: rgba(0, 0, 0, 1);
-$black_transparent: rgba(0, 0, 0, 0.8);
-$light_blue: rgba(52, 152, 219, 1.0);
+$black_transparent: rgba(0, 0, 0, 0.6);
+$light_blue: rgba(52, 152, 219, 1);
+$deep_blue: rgba(58, 68, 112, 255);
+$gray: rgba(128, 128, 128, 1);
 
 //Fonts
 $poppins: "Poppins";
 
 //Weights
-$regular: 400;
-$bold: 700;
 $light: 300;
+$regular: 400;
+$semi: 500;
+$bold: 700;
 
 //Transitions
 $normal: 0.6s all ease-in-out;

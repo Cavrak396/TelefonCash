@@ -6,3 +6,12 @@
 .wrap--primary {
   max-width: 1650px;
 }
+
+.wrap--positioned {
+  position: relative;
+  height: 100vh;
+
+  @include phone {
+    height: 70vh;
+  }
+}
