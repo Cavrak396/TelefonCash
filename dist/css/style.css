@@ -285,7 +285,7 @@ Glyphs list
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      top: 81px;
+      top: 91px;
       left: -100%;
       width: 100%;
       height: 100vh;
@@ -408,7 +408,7 @@ Glyphs list
 
 .banner__lines {
   font-size: 20px;
-  line-height: 25px; }
+  line-height: 28px; }
   @media screen and (max-width: 767px) {
     .banner__lines {
       font-size: 13px;
@@ -549,3 +549,20 @@ Glyphs list
   @media screen and (max-width: 767px) {
     .about__information-answer {
       font-size: 14px; } }
+
+.offers {
+  background-color: #020403;
+  padding: 50px 0; }
+
+.offers__join-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1024px; }
+
+.offers__join-title {
+  color: white;
+  margin-bottom: 14px; }
+
+.offers__join-lines {
+  color: white;
+  line-height: 25px; }

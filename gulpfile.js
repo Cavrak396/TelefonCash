@@ -78,7 +78,7 @@ gulp.task("copy-js", function () {
 
 gulp.task("copy-img", function () {
   return gulp
-    .src("src/images/*.{png,jpg,jpeg,svg}")
+    .src("src/images/*.{png,jpg,jpeg,svg,mp4}")
     .pipe(gulp.dest("dist/images"));
 });
 gulp.task("copy-svg", function () {
