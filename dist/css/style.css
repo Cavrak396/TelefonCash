@@ -208,7 +208,8 @@ h2 {
   color: gray; }
   @media screen and (max-width: 767px) {
     h2 {
-      font-size: 31px; } }
+      font-size: 31px;
+      line-height: 35px; } }
 
 /**
 iconfont Webfont
@@ -247,9 +248,6 @@ Glyphs list
 
 .icon-heart-icon::before {
   content: '\ea03'; }
-
-.icon-long-arrow-right-icon::before {
-  content: '\ea04'; }
 
 .icon-mobile-landscape-mode-icon::before {
   content: '\ea05'; }
@@ -294,19 +292,6 @@ Glyphs list
     transition: 0.6s all ease-in-out;
     background-color: white;
     color: darkgoldenrod; }
-
-.footer__email-button {
-  max-width: 20%;
-  flex: 1 1 20%;
-  background-color: darkgoldenrod;
-  font-weight: 700;
-  color: white;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer; }
-  .footer__email-button:hover {
-    transition: 0.6s all ease-in-out;
-    color: darkgoldenrod;
-    background-color: white; }
 
 .footer__email-button {
   max-width: 20%;
@@ -450,7 +435,7 @@ Glyphs list
 .banner {
   position: relative;
   z-index: 1;
-  margin-top: -91px;
+  margin-top: -95px;
   padding: 325px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -517,13 +502,12 @@ Glyphs list
   .about__title::after {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 3px;
-    background-color: #3498db;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    border-radius: 10px; }
+    background-color: #3498db;
+    width: 50px;
+    height: 3px; }
 
 .about__lines {
   font-size: 17px;
@@ -668,9 +652,9 @@ Glyphs list
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    background-color: #3498db;
     width: 80px;
-    height: 2px;
-    background-color: #3498db; }
+    height: 2px; }
 
 .offers__steps-cards {
   display: flex;
@@ -779,9 +763,9 @@ Glyphs list
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    background-color: #3498db;
     width: 80px;
-    height: 2px;
-    background-color: #3498db; }
+    height: 2px; }
 
 .offers__buyed-phone {
   display: flex;
@@ -906,13 +890,12 @@ Glyphs list
   .warning__join-title::after {
     position: absolute;
     content: "";
-    width: 100px;
-    height: 3px;
-    background-color: #3498db;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    border-radius: 10px; }
+    background-color: #3498db;
+    width: 100px;
+    height: 3px; }
 
 .warning__join-lines {
   font-size: 17px;
@@ -1173,6 +1156,10 @@ Glyphs list
   padding: 10px;
   font-size: 15px;
   border: none; }
+  @media screen and (max-width: 767px) {
+    .footer__email-input,
+    .footer__email-button {
+      font-size: 12px; } }
 
 .footer__email-input {
   max-width: 80%;

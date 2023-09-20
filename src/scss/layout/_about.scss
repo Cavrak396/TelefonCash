@@ -15,15 +15,10 @@
   margin-bottom: 20px;
 
   @include after {
-    position: absolute;
-    content: "";
+    @include title_line;
+    
     width: 50px;
     height: 3px;
-    background-color: $light_blue;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-radius: 10px;
   }
 }
 

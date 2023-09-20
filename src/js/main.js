@@ -14,16 +14,15 @@ function scrollToSection(targetClass) {
     targetSection.scrollIntoView({ behavior: "smooth" });
   }
 }
-
 function posaljiMejl() {
   const emailInput = document.getElementById("emailInput");
   const email = emailInput.value;
 
   if (email) {
-    const url = `mailto:cavrakmarko396@gmail.com?subject=Novi mejl&body=${email}`;
+    const url = `mailto:telefoncash407@gmail.com?subject=Novi mejl&body=${email}`;
     window.location.href = url;
   } else {
-    alert("Unesite Vaše pitanje!");
+    alert("Unesite Vašu poruku!");
   }
 }
 

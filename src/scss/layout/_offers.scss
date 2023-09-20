@@ -34,6 +34,9 @@
 
   @include after {
     @include title_line;
+
+    width: 80px;
+    height: 2px;
   }
 }
 
@@ -156,6 +159,9 @@
 
   @include after {
     @include title_line;
+
+    width: 80px;
+    height: 2px;
   }
 }
 

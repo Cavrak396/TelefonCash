@@ -177,6 +177,10 @@
   padding: 10px;
   font-size: 15px;
   border: none;
+
+  @include phone {
+    font-size: 12px;
+  }
 }
 
 .footer__email-input {

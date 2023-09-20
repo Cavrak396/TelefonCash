@@ -49,19 +49,3 @@
     background-color: $white;
   }
 }
-
-.footer__email-button {
-  max-width: 20%;
-  flex: 1 1 20%;
-  background-color: $gold;
-  font-weight: $bold;
-  color: $white;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-
-  @include hover {
-    transition: $normal;
-    color: $gold;
-    background-color: $white;
-  }
-}
