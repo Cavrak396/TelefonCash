@@ -1,0 +1,162 @@
+.warning {
+  padding: 80px 0 150px 0;
+
+  @include phone {
+    padding: 80px 0 69px 0;
+  }
+}
+
+.warning__join-text {
+  text-align: center;
+  max-width: 1257px;
+  margin: 0 auto;
+}
+
+.warning__join-title {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  line-height: 36px;
+
+  @include after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: $light_blue;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+  }
+}
+
+.warning__join-lines {
+  font-size: 17px;
+  line-height: 27px;
+  color: $gray;
+  margin-bottom: 50px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.warning__avoid {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.warning__avoid-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.warning__avoid-item {
+  margin: 0 10px;
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  border: $low_gray solid 1px;
+  padding: 55px 15px 65px 15px;
+  border-radius: 10px;
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 55px 10px 65px 10px;
+    margin-bottom: 20px;
+  }
+
+  @include phone {
+    padding: 40px 10px 47px 10px;
+  }
+}
+
+.warning__item-tag,
+.warning__item-icon {
+  display: block;
+  text-align: center;
+}
+
+.warning__item-tag {
+  font-size: 30px;
+  font-weight: $bold;
+  margin-bottom: 20px;
+  color: $light_gray;
+  line-height: 35px;
+
+  @include tablet {
+    font-size: 25px;
+  }
+}
+
+.warning__item-icon {
+  font-size: 35px;
+  margin-bottom: 55px;
+  color: $vine_red;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
+
+.warning__item-list {
+  margin-bottom: 45px;
+
+  @include tablet {
+    max-width: 300px;
+    margin: 0 auto 55px auto;
+  }
+}
+
+.warning__item-underlist {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
+
+  @include phone {
+    margin-bottom: 13px;
+  }
+}
+
+.warning__item-resoan {
+  display: flex;
+  color: $gray;
+  font-size: 17px;
+
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.warning__item-number,
+.warning__item-lines {
+  display: block;
+  line-height: 25px;
+  color: $light_gray;
+  font-weight: $semi;
+
+  @include phone {
+    font-size: 14px;
+  }
+}
+
+.warning__item-number {
+  margin-right: 8px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.warning__avoid-message {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: $semi;
+  color: $gray;
+  font-size: 14px;
+}

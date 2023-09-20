@@ -42,6 +42,8 @@
 
 @mixin underline_start {
   content: "";
+  bottom: 0;
+  left: 0;
   height: 2px;
   width: 0%;
   background-color: $light_blue;
@@ -51,6 +53,8 @@
 
 @mixin underline_finish {
   content: "";
+  bottom: 0;
+  left: 0;
   height: 2px;
   width: 100%;
   background-color: $light_blue;
@@ -65,7 +69,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $black;
-  opacity: 0.5;
   z-index: 15;
+}
+
+@mixin title_line {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80px;
+  height: 2px;
+  background-color: $light_blue;
 }

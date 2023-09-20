@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('fonts/iconfont.eot?1694289017232');
-	src: url('fonts/iconfont.eot?#iefix-1694289017232') format('embedded-opentype'),
-		url('fonts/iconfont.woff2?1694289017232') format('woff2'),
-		url('fonts/iconfont.woff?1694289017232') format('woff'),
-		url('fonts/iconfont.ttf?1694289017232') format('truetype');
+	src: url('../fonts/iconfont.eot?1694810208160');
+	src: url('../fonts/iconfont.eot?#iefix-1694810208160') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1694810208160') format('woff2'),
+		url('../fonts/iconfont.woff?1694810208160') format('woff'),
+		url('../fonts/iconfont.ttf?1694810208160') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,6 +33,38 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-icon-car.svg::before {
+.icon-broken-heart-icon::before {
 	content: '\ea01';
+}
+
+.icon-credit-card-icon::before {
+	content: '\ea02';
+}
+
+.icon-heart-icon::before {
+	content: '\ea03';
+}
+
+.icon-long-arrow-right-icon::before {
+	content: '\ea04';
+}
+
+.icon-mobile-landscape-mode-icon::before {
+	content: '\ea05';
+}
+
+.icon-phone-line-icon::before {
+	content: '\ea06';
+}
+
+.icon-search-icon::before {
+	content: '\ea07';
+}
+
+.icon-setting-line-icon::before {
+	content: '\ea08';
+}
+
+.icon-x-icon::before {
+	content: '\ea09';
 }

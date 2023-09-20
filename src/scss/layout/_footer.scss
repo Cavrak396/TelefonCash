@@ -1,0 +1,205 @@
+.footer__top {
+  position: relative;
+  padding: 200px 0;
+
+  @include background;
+
+  @include after {
+    @include darker;
+
+    background-color: $dark_blue;
+    opacity: 0.8;
+  }
+
+  @include tablet {
+    padding: 90px 0;
+  }
+}
+
+.footer__top-text {
+  position: relative;
+  text-align: center;
+  z-index: 20;
+}
+
+.footer__top-title {
+  font-size: 35px;
+  color: $white;
+  font-weight: $bold;
+  letter-spacing: 1.4px;
+  line-height: 45px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.footer__bottom {
+  background-color: $dark_blue;
+  padding: 50px 0;
+}
+
+.footer__line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: $low_gray solid 1px;
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+}
+
+.footer__container {
+  max-width: 33.33%;
+  flex: 1 1 33.33%;
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  @include hover {
+    transition: $normal;
+    opacity: 0.6;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.footer__logo {
+  max-width: 70px;
+  max-height: 70px;
+  margin-right: 10px;
+}
+
+.footer__logo-name,
+.footer__logo-description {
+  display: block;
+  color: $white;
+}
+
+.footer__logo-name {
+  font-size: 26px;
+  font-weight: $bold;
+  margin-bottom: 1px;
+}
+
+.footer__logo-description {
+  font-size: 15px;
+  font-weight: $semi;
+}
+
+.footer__container-text {
+  color: $white_transparent;
+  font-size: 15px;
+  line-height: 26px;
+  max-width: 250px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin: 0 auto 20px auto;
+  }
+}
+
+.footer__container-number {
+  display: block;
+  color: $white;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  @include hover {
+    transition: $normal;
+    opacity: 0.7;
+  }
+}
+
+.footer__navigation-tag,
+.footer__email-tag {
+  display: block;
+  color: $white;
+  font-weight: $semi;
+  margin-bottom: 30px;
+
+  @include phone {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__navigation-item {
+  margin-bottom: 12px;
+}
+
+.footer__navigation-link {
+  color: $gray;
+  text-decoration: none;
+
+  @include hover {
+    transition: $normal;
+    color: $white;
+  }
+}
+
+.footer__email-lines {
+  color: $gray;
+  line-height: 22px;
+  font-size: 15px;
+  margin-bottom: 20px;
+
+  @include phone {
+    font-size: 14px;
+  }
+}
+
+.footer__container-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__email-input,
+.footer__email-button {
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+
+.footer__email-input {
+  max-width: 80%;
+  flex: 1 1 80%;
+  color: $white;
+  background-color: $black_quality;
+  border-radius: 10px 0 0 10px;
+}
+
+.footer__bottom-developer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer__bottom-copyright {
+  display: block;
+  color: $low_gray;
+  font-size: 15px;
+  line-height: 25px;
+
+  @include phone {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

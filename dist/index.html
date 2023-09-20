@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/SKmobile_logo.png" type="image/x-icon">
+    <link rel="icon" href="images/firm_logo.png" type="image/x-icon">
     <script defer src="js/main.js"></script>
     <title>TelefonCash Zrenjanin</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header js-header">
         <div class="wrap wrap--primary">
             <div class="header__line">
                 <a href="index.html" class="header__logo-link">
-                    <img class="header__logo" src="images/SKmobile_logo.png" alt="company logo">
-                    <span class="header__logo-title">SK mobile</span>
+                    <img class="header__logo" src="images/firm_logo.png" alt="company logo">
+                    <span class="header__logo-title">TelefonCash</span>
                 </a>
                 <nav class="navigation">
                     <button type="button" class="navigation__hamburger js-hamburger">
@@ -26,33 +26,28 @@
                     </button>
                     <ul class="navigation__list js-nav-list">
                         <li class="navigation__list-item">
-                            <a href="javascript:;" class="navigation__list-link">
+                            <a href=".banner" class="navigation__list-link js-nav-link">
                                 Naslovna
                             </a>
                         </li>
                         <li class="navigation__list-item">
-                            <a href="javascript:;" class="navigation__list-link">
+                            <a href=".about" class="navigation__list-link js-nav-link">
                                 O nama
                             </a>
                         </li>
                         <li class="navigation__list-item">
-                            <a href="javascript:;" class="navigation__list-link">
+                            <a href=".offers" class="navigation__list-link js-nav-link">
                                 Otkup
                             </a>
                         </li>
                         <li class="navigation__list-item">
-                            <a href="javascript:;" class="navigation__list-link">
-                                Home
+                            <a href=".warning" class="navigation__list-link js-nav-link">
+                                Napomena
                             </a>
                         </li>
                         <li class="navigation__list-item">
-                            <a href="javascript:;" class="navigation__list-link">
-                                Home
-                            </a>
-                        </li>
-                        <li class="navigation__list-item">
-                            <a href="javascript:;" class="navigation__list-link">
-                                Home
+                            <a href=".footer" class="navigation__list-link js-nav-link">
+                                Kontakt
                             </a>
                         </li>
                     </ul>
@@ -62,8 +57,8 @@
 
     </header>
     <main>
-        <section class="banner" style="background-image: url(images/baner_bg.jpg);">
-            <div class="wrap wrap--primary wrap--positioned">
+        <section class="banner" style="background-image: url(images/baner_bg-img.jpg);">
+            <div class="wrap wrap--primary wrap--primary">
                 <div class="banner__text">
                     <h1 class="banner__title">TelefonCash
                         <span class="banner__title-colored">Zrenjanin</span>
@@ -72,6 +67,7 @@
                         Kod TelefonCash-a, Vaši telefoni postaju vrednost koju zaslužujete. Naša usluga nudi najbolje
                         cene za Vaš telefon i omogućava Vam isplatu odmah. Bez nepotrebnih komplikacija, bez stresa.
                     </p>
+                    <a href="tel:063-188-2600" class="banner__button">Kontaktiraj Nas.</a>
                 </div>
             </div>
         </section>
@@ -142,15 +138,331 @@
                 <div class="offers__join-text">
                     <h2 class="offers__join-title h2">Načini otkupljivanja.</h2>
                     <p class="offers__join-lines">
-                        Otkup telefona je jednostavan i isplativ način da prodate svoj telefon, bilo da je nov ili
-                        stari. Nudimo konkurentske cene i trenutnu isplatu za širok spektar modela. Bez obzira da li
-                        ažurirate svoj uređaj ili jednostavno želite prodati višak telefona, mi smo tu da vam pomognemo.
+                        Otkupljujemo mobilne telefone različitih proizvođača po atraktivnim cenama, čak do 90% njihove
+                        tržišne vrednosti. Osim toga, želimo vam ponuditi ne samo najbolje cene, već i praktičnost. Zato
+                        smo omogućili mogućnost ličnog preuzimanja u Zrenjaninu, Beogradu i Novom Sadu.
                     </p>
+                </div>
+                <div class="offers__steps">
+                    <h3 class="offers__steps-title">Kako izgleda proces selekcije?</h3>
+                    <ul class="offers__steps-cards">
+                        <li class="offers__steps-card" style="background-image: url(images/offers_woman.jpg);">
+                            <a href="tel:063-188-2600" class="offers__steps-link">
+                                <div class="offers__steps-text">
+                                    <span class="offers__steps-number">Korak 1.</span>
+                                    <div class="offers__steps-interpretation">
+                                        <span class="offers__steps-icon icon-phone-line-icon"></span>
+                                        <h3 class="offers__steps-name">Pozovite nas.</h3>
+                                    </div>
+                                    <p class="offers__steps-lines">Pozivanjem našeg broja telefona stupamo u kontakt
+                                        kako bismo dogovorili procenu telefona. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="offers__steps-card" style="background-image: url(images/offers_money.jpg);">
+                            <a href="tel:063-188-2600" class="offers__steps-link">
+                                <div class="offers__steps-text">
+                                    <span class="offers__steps-number">Korak 2.</span>
+                                    <div class="offers__steps-interpretation">
+                                        <span class="offers__steps-icon icon-search-icon"></span>
+                                        <h3 class="offers__steps-name">Dijagnostika uredjaja.</h3>
+                                    </div>
+                                    <p class="offers__steps-lines">Kada uspostavimo poziv, telefon se donosi na proveru
+                                        gde ćemo proveriti sve funkcije telefona.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="offers__steps-card" style="background-image: url(images/offers_stats.jpg);">
+                            <a href="tel:063-188-2600" class="offers__steps-link">
+                                <div class="offers__steps-text">
+                                    <span class="offers__steps-number">Korak 3.</span>
+                                    <div class="offers__steps-interpretation">
+                                        <span class="offers__steps-icon icon-credit-card-icon"></span>
+                                        <h3 class="offers__steps-name">Odredjivanje cene.</h3>
+                                    </div>
+                                    <p class="offers__steps-lines">Na osnovu procenjene funkcionalnosti uređaja
+                                        predlažemo Vam cenu i stupamo u radni odnos.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offers__second-join">
+                    <h2 class="offers__second-title">Kakve telefone kupujemo?</h2>
+                </div>
+                <div class="offers__buyed-phone">
+                    <ul class="offers__buyed-list">
+                        <li class="offers__buyed-card offers__buyed-card--large"
+                            style="background-image: url(images/offers_phone.jpg);">
+                            <a href="tel:063-188-2600" class="offers__buyed-link">
+                                <div class="offers__buyed-text offers__buyed-text--large">
+                                    <div class="offers__buyed-interpretation">
+                                        <span class="offers__buyed-icon icon-heart-icon"></span>
+                                        <h3 class="offers__buyed-title">Otkup novih telefona</h3>
+                                    </div>
+                                    <p class="offers__buyed-lines">
+                                        Spremni smo da vam ponudimo najbolje cene za vaše nove telefone! Bez obzira da
+                                        li ste odlučili da nadogradite svoj uređaj ili jednostavno želite prodati novi
+                                        telefon koji vam nije potreban, mi smo tu da vam pomognemo.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="offers__buyed-list offers__buyed-list--small">
+                        <li class="offers__buyed-card offers__buyed-card--small"
+                            style="background-image: url(images/offers_grandma.jpg);">
+                            <a href="tel:063-188-2600" class="offers__buyed-link offers__buyed-link--small">
+                                <div class="offers__buyed-text offers__buyed-text--small">
+                                    <div class="offers__buyed-interpretation">
+                                        <span class="offers__buyed-icon icon-mobile-landscape-mode-icon"></span>
+                                        <h3 class="offers__buyed-title">Otkup polovnih telefona</h3>
+                                    </div>
+                                    <p class="offers__buyed-lines">
+                                        Imate starog prijatelja - vaš polovni telefon? Mi cenimo tu vezu! </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="offers__buyed-card offers__buyed-card--small"
+                            style="background-image: url(images/offers_parts.jpg);">
+                            <a href="tel:063-188-2600" class="offers__buyed-link offers__buyed-link--small">
+                                <div class="offers__buyed-text offers__buyed-text--small">
+                                    <div class="offers__buyed-interpretation">
+                                        <span class="offers__buyed-icon icon-setting-line-icon"></span>
+                                        <h3 class="offers__buyed-title">Otkup delova telefona</h3>
+                                    </div>
+                                    <p class="offers__buyed-lines">
+                                        Spremni smo da kupimo vaš telefon ili telefone, kao i mobilne telefone i delove!
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="offers__buyed-card offers__buyed-card--small"
+                            style="background-image: url(images/offers_broken.jpg);">
+                            <a href="tel:063-188-2600" class="offers__buyed-link offers__buyed-link--small">
+                                <div class="offers__buyed-text offers__buyed-text--small">
+                                    <div class="offers__buyed-interpretation">
+                                        <span class="offers__buyed-icon icon-broken-heart-icon"></span>
+                                        <h3 class="offers__buyed-title">Otkup polomljenih telefona</h3>
+                                    </div>
+                                    <p class="offers__buyed-lines">
+                                        Imate polomljen telefon? Mi ga želimo! Bez obzira na stepen oštećenja, vaš
+                                        polomljeni telefon vredi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="warning">
+            <div class="wrap wrap--primary">
+                <div class="warning__join-text">
+                    <h2 class="warning__join-title">Napomena o proizvodima.</h2>
+                    <p class="warning__join-lines">
+                        Želimo da vas podsetimo na važnost pažljivog razmatranja prilikom prodaje telefona. U našem
+                        naporu da obezbedimo visok kvalitet proizvoda, pažljivo biramo uređaje koje kupujemo.
+                        Važno je napomenuti da je pre prodaje telefona bitno pročitati naša pravila i smernice kako
+                        biste bili sigurni da udovoljavate našim standardima kvaliteta.
+                    </p>
+                </div>
+                <div class="warning__avoid">
+                    <ul class="warning__avoid-list">
+                        <li class="warning__avoid-item">
+                            <span class="warning__item-tag">Ukradeno i nadjeno!</span>
+                            <span class="warning__item-icon icon-x-icon"></span>
+                            <ul class="warning__item-list">
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">1.</span>
+                                        <span class="warning__item-lines">
+                                            Zakonitost i Etičnost
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">2.</span>
+                                        <span class="warning__item-lines">
+                                            Bezbednost i Sigurnost
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">3.</span>
+                                        <span class="warning__item-lines">
+                                            Očuvanje Vlasničkih Prava
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">4.</span>
+                                        <span class="warning__item-lines">
+                                            Pravne Posledice
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <span class="warning__avoid-message">Hvala na razumevanju.</span>
+                        </li>
+                        <li class="warning__avoid-item">
+                            <span class="warning__item-tag">Replike modela!</span>
+                            <span class="warning__item-icon icon-x-icon"></span>
+                            <ul class="warning__item-list">
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">1.</span>
+                                        <span class="warning__item-lines">
+                                            Niski Kvalitet i Performanse
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">2.</span>
+                                        <span class="warning__item-lines">
+                                            Korektna Tržišna Praksa
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">3.</span>
+                                        <span class="warning__item-lines">
+                                            Etički Principi
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">4.</span>
+                                        <span class="warning__item-lines">
+                                            Reputacija i Poverenje
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <span class="warning__avoid-message">Hvala na razumevanju.</span>
+                        </li>
+                        <li class="warning__avoid-item">
+                            <span class="warning__item-tag">Pokvasene telefone!</span>
+                            <span class="warning__item-icon icon-x-icon"></span>
+                            <ul class="warning__item-list">
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">1.</span>
+                                        <span class="warning__item-lines">
+                                            Oštećenje i Neispravnost
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">2.</span>
+                                        <span class="warning__item-lines">
+                                            Bezbednost i Sigurnost
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">3.</span>
+                                        <span class="warning__item-lines">
+                                            Visoki Troškovi Popravke
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="warning__item-underlist">
+                                    <span class="warning__item-resoan">
+                                        <span class="warning__item-number">4.</span>
+                                        <span class="warning__item-lines">
+                                            Očuvanje Vrednosti
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <span class="warning__avoid-message">Hvala na razumevanju.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
-
+    <footer class="footer">
+        <div class="footer__top" style="background-image: url(images/footer__image.jpg);">
+            <div class="wrap wrap--primary">
+                <div class="footer__top-text">
+                    <h3 class="footer__top-title">
+                        Prodajte svoj telefon i ostvarite najbolju cenu uz našu brzu i
+                        pouzdanu uslugu otkupa.
+                    </h3>
+                    <a href="tel:063-188-2600" class="footer__top-button">Kontaktirajte Nas.</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="wrap wrap--secondary">
+                <div class="footer__line">
+                    <div class="footer__container">
+                        <a href="index.html" class="footer__logo-link">
+                            <img src="images/firm_logo.png" class="footer__logo" alt="company logo">
+                            <div class="footer__logo-text">
+                                <span class="footer__logo-name">TelefonCash</span>
+                                <span class="footer__logo-description">Kupovina telefona.</span>
+                            </div>
+                        </a>
+                        <p class="footer__container-text">
+                            Vršimo otkup telefona širom Srbije, i do 90% od njihove tržišne cene.
+                        </p>
+                        <a href="tel:063-188-2600" class="footer__container-number">063-188-2600</a>
+                    </div>
+                    <div class="footer__container">
+                        <nav class="footer__container-navigation">
+                            <span class="footer__navigation-tag">Mapa sajta</span>
+                            <ul class="footer__navigation-list">
+                                <li class="footer__navigation-item">
+                                    <a href=".banner" class="footer__navigation-link js-nav-link">Naslovna</a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href=".about" class="footer__navigation-link js-nav-link">O nama</a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href=".offers" class="footer__navigation-link js-nav-link">Otkup</a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href=".warning" class="footer__navigation-link js-nav-link">Napomena</a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href=".footer" class="footer__navigation-link js-nav-link">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__container">
+                        <div class="footer__container-email">
+                            <span class="footer__email-tag">Kontaktirajte Nas putem mejla</span>
+                            <p class="footer__email-lines">Pošaljite nam e-mail sa detaljima o svom telefonu i mi ćemo
+                                vam ponuditi najbolju cenu. Ne gubite vreme, kontaktirajte nas danas i ostvarite profit
+                                prodajom svog starog uređaja!</p>
+                        </div>
+                        <form class="footer__container-form">
+                            <input type="email" class="footer__email-input" id="emailInput"
+                                placeholder="Pošaljite nam mail..">
+                            <button type="button" class="footer__email-button" id="sendEmailButton">Pošalji</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-developer">
+                <span class="footer__bottom-copyright">
+                    Copyright ©Cavrak 2023. Sva prava zadržana.
+                </span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

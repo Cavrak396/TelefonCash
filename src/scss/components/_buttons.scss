@@ -1,0 +1,67 @@
+.banner__button {
+  display: inline-block;
+  color: $white;
+  text-decoration: none;
+  background-color: $light_blue;
+  padding: 14px 20px;
+  border-radius: 20px;
+  font-weight: $semi;
+
+  @include hover {
+    transition: $normal;
+    color: $light_blue;
+    background-color: $white;
+  }
+
+  @include phone {
+    font-size: 13px;
+  }
+}
+
+.footer__top-button {
+  display: inline-block;
+  text-decoration: none;
+  color: $white;
+  background-color: $gold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: $semi;
+
+  @include hover {
+    transition: $normal;
+    background-color: $white;
+    color: $gold;
+  }
+}
+
+.footer__email-button {
+  max-width: 20%;
+  flex: 1 1 20%;
+  background-color: $gold;
+  font-weight: $bold;
+  color: $white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+
+  @include hover {
+    transition: $normal;
+    color: $gold;
+    background-color: $white;
+  }
+}
+
+.footer__email-button {
+  max-width: 20%;
+  flex: 1 1 20%;
+  background-color: $gold;
+  font-weight: $bold;
+  color: $white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+
+  @include hover {
+    transition: $normal;
+    color: $gold;
+    background-color: $white;
+  }
+}
