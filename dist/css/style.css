@@ -202,12 +202,12 @@ a {
 .span {
   display: block; }
 
-h2 {
+.h2 {
   font-size: 38px;
   font-weight: 500;
   color: gray; }
   @media screen and (max-width: 767px) {
-    h2 {
+    .h2 {
       font-size: 31px;
       line-height: 35px; } }
 
@@ -622,6 +622,8 @@ Glyphs list
   background-color: #161616;
   padding: 50px 0;
   overflow: hidden; }
+  .offers .h2 {
+    color: white; }
 
 .offers__join-text {
   text-align: center;
@@ -661,6 +663,9 @@ Glyphs list
   flex-wrap: wrap;
   margin: 0 -30px;
   padding-bottom: 50px; }
+  @media screen and (max-width: 767px) {
+    .offers__steps-cards {
+      padding-bottom: 10px; } }
 
 .offers__steps-card {
   position: relative;
@@ -681,7 +686,8 @@ Glyphs list
     height: 100%;
     z-index: 15;
     background-color: black;
-    opacity: 0.2; }
+    opacity: 0.2;
+    border-radius: 10px; }
   .offers__steps-card:hover .offers__steps-text {
     min-height: 250px;
     background-color: rgba(255, 255, 255, 0.7); }
@@ -695,7 +701,8 @@ Glyphs list
       flex: 1 1 100%; } }
 
 .offers__steps-link,
-.offers__buyed-link {
+.offers__buyed-link,
+.offers__other-link {
   position: relative;
   display: block;
   width: 100%;
@@ -770,7 +777,8 @@ Glyphs list
 .offers__buyed-phone {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px; }
+  margin: 0 -10px;
+  padding-bottom: 40px; }
   @media screen and (max-width: 1200px) {
     .offers__buyed-phone {
       flex-direction: column; } }
@@ -804,7 +812,8 @@ Glyphs list
     height: 100%;
     z-index: 15;
     background-color: black;
-    opacity: 0.2; }
+    opacity: 0.2;
+    border-radius: 10px; }
   .offers__buyed-card:hover .offers__buyed-text--large {
     min-height: 230px; }
   .offers__buyed-card:hover .offers__buyed-text--small {
@@ -824,7 +833,7 @@ Glyphs list
       margin: 0 10px 20px 10px; } }
 
 .offers__buyed-card--small {
-  margin: 0 10px 20px 10px;
+  margin: 0px 10px 10px 10px;
   max-width: calc(50% - 20px);
   flex: 1 1 calc(50% - 20px);
   min-height: 305px; }
@@ -870,6 +879,89 @@ Glyphs list
     .offers__buyed-lines {
       font-size: 14px;
       line-height: 22px; } }
+
+.offers__third-join {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.offers__third-title {
+  position: relative;
+  padding-bottom: 20px; }
+  .offers__third-title::after {
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #3498db; }
+
+.offers__other-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px; }
+
+.offers__other-item {
+  position: relative;
+  margin: 0 20px 20px 20px;
+  max-width: calc(50% - 40px);
+  flex: 1 1 calc(50% - 40px);
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .offers__other-item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px; }
+  .offers__other-item:hover .offers__other-text {
+    transform: scale(1.08);
+    transition: 0.6s all ease-in-out; }
+  @media screen and (max-width: 1200px) {
+    .offers__other-item {
+      max-width: 100%;
+      flex: 1 1 100%; }
+      .offers__other-item:hover .offers__other-text {
+        transform: scale(1.03); } }
+
+.offers__other-link {
+  padding: 0 10px; }
+
+.offers__other-text {
+  position: relative;
+  padding: 325px 0;
+  color: white;
+  z-index: 15;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto; }
+  @media screen and (max-width: 767px) {
+    .offers__other-text {
+      padding: 125px 0; } }
+
+.offers__other-name {
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .offers__other-name {
+      font-size: 45px;
+      margin-bottom: 10px; } }
+
+.offers__other-lines {
+  line-height: 23px; }
+  @media screen and (max-width: 767px) {
+    .offers__other-lines {
+      font-size: 14px; } }
 
 .warning {
   padding: 80px 0 150px 0; }

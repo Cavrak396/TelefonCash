@@ -2,6 +2,10 @@
   background-color: $black_quality;
   padding: 50px 0;
   overflow: hidden;
+
+  .h2 {
+    color: $white;
+  }
 }
 
 .offers__join-text {
@@ -45,6 +49,10 @@
   flex-wrap: wrap;
   margin: 0 -30px;
   padding-bottom: 50px;
+
+  @include phone {
+    padding-bottom: 10px;
+  }
 }
 
 .offers__steps-card {
@@ -62,6 +70,7 @@
 
     background-color: $black;
     opacity: 0.2;
+    border-radius: 10px;
   }
 
   @include hover {
@@ -84,7 +93,8 @@
 }
 
 .offers__steps-link,
-.offers__buyed-link {
+.offers__buyed-link,
+.offers__other-link {
   position: relative;
   display: block;
   width: 100%;
@@ -169,6 +179,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  padding-bottom: 40px;
 
   @include tablet {
     flex-direction: column;
@@ -204,6 +215,7 @@
 
     background-color: $black;
     opacity: 0.2;
+    border-radius: 10px;
   }
 
   @include hover {
@@ -235,7 +247,7 @@
 }
 
 .offers__buyed-card--small {
-  margin: 0 10px 20px 10px;
+  margin: 0px 10px 10px 10px;
   max-width: calc(50% - 20px);
   flex: 1 1 calc(50% - 20px);
   min-height: 305px;
@@ -288,5 +300,102 @@
   @include phone {
     font-size: 14px;
     line-height: 22px;
+  }
+}
+
+.offers__third-join {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.offers__third-title {
+  position: relative;
+  padding-bottom: 20px;
+
+  @include after {
+    width: 80px;
+    height: 2px;
+
+    @include title_line;
+  }
+}
+
+.offers__other-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.offers__other-item {
+  position: relative;
+  margin: 0 20px 20px 20px;
+  max-width: calc(50% - 40px);
+  flex: 1 1 calc(50% - 40px);
+  border-radius: 10px;
+
+  @include background;
+
+  @include after {
+    @include darker;
+
+    background-color: $black;
+    opacity: 0.5;
+    border-radius: 10px;
+  }
+
+  @include hover {
+    .offers__other-text {
+      transform: scale(1.08);
+      transition: $normal;
+    }
+  }
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+
+    @include hover {
+      .offers__other-text {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+.offers__other-link {
+  padding: 0 10px;
+}
+
+.offers__other-text {
+  position: relative;
+  padding: 325px 0;
+  color: $white;
+  z-index: 15;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @include phone {
+    padding: 125px 0;
+  }
+}
+
+.offers__other-name {
+  display: block;
+  font-size: 50px;
+  font-weight: $bold;
+  margin-bottom: 20px;
+
+  @include phone {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+}
+
+.offers__other-lines {
+  line-height: 23px;
+
+  @include phone {
+    font-size: 14px;
   }
 }
